@@ -1,0 +1,568 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li {
+    margin: 0;
+    padding: 0;
+    
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+
+.navigation {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.container__nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.navbar .link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 47px; 
+    transition: all .2s;
+    cursor: pointer;
+   
+}
+.navbar .link:last-child {
+    margin: 0;
+}
+
+.navbar .link:hover {
+    color: #ff8b38ed;
+}
+
+
+
+
+
+
+/* About */
+.container__about {
+    margin: 0 auto;
+    padding: 107px 0 108px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.about__header {
+    text-align: center ;
+}
+
+.about__title {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+.about__title:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 22px auto 26px;
+
+}
+.about__fish {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #86878b;
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 77px auto 0;
+    
+
+}
+.about__item {
+    width: calc(33.3% - 21px);
+    text-align: center;
+    padding: 0 0;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    
+    margin: 0 auto 22px;
+    display: flex;
+}
+.icon i{
+    font-size: 32px;
+    color: #ff8b38;
+    margin: auto;
+}
+
+.about__item h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    
+    margin: 0 auto 20px;
+}
+.about__item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #86878b;
+    
+}
+
+/* price */
+
+.section__price {
+    margin: 0 auto 0;
+    text-align: center;
+    background: #f5f5f5
+    
+}
+.container__price {
+    margin: 0 auto;
+    max-width: 1110px;
+    width: 100%;
+    padding: 93px 0 96px;
+}
+
+
+.price__header {
+    text-align: center ;
+}
+
+.price__title {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+.price__title:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 22px auto 26px;
+
+}
+.price__fish {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #86878b;
+}
+.price__column {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+}
+
+.column__items {
+    width: calc(33.3% - 20px);
+    align-self: flex-end;
+    
+    
+}
+.column__items .items-plan {
+    background-color: #333;
+    height: 59px;
+    line-height: 59px;
+    color: #fff;
+    border-bottom: 1px solid;
+    border-color: #f5f5f5;
+
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.column__items .items-price {
+    background-color: #333;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    border-bottom: 1px solid;
+    border-color: #f5f5f5;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 94px;
+    font-weight: 700;
+}
+
+.column__items .items-aim {
+    background-color: #333;
+    height: 50px;
+    line-height: 50px;
+    color: #adadad;
+    border-bottom: 5px solid;
+    border-color: #ff8b38;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight:700;
+    font-style: italic;
+
+}
+.items-main {
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #adadad;
+    border-top: 1px solid;
+    border-color: #f5f5f5;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    text-transform: uppercase;
+}
+.column__items .items-popular {
+    background-color: #ff8b38;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight:700;
+    text-transform: uppercase;
+}
+
+
+
+.dollar {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* reviews */
+
+.reviews {
+    padding: 108px 0 100px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.reviews .title {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+.reviews .title:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 22px auto 26px;
+
+}
+.reviews .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #86878b;
+}
+
+.reviews__member {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member {
+    width: calc(33% - 65px);
+    margin-top: 55px;
+}
+.member-rewie {
+    background: #f5f5f5;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 23px;
+    padding: 25px;
+}
+
+.member-rewie p {
+
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic; 
+    color: #86878b;
+
+}
+.member-rewie::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #f5f5f5;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    top: 100%;
+    left: 7%;
+    
+}
+
+.member-about {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.member-name {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.member-name .name  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+
+}
+
+.member-name .position {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #86878b;
+}
+/* Custom */ 
+.custom {
+    width: 100%;
+    
+    margin: 0 auto;
+    min-height: 320px;
+    background: #000 url("img/download-bg") center no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.custom-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 63px 0 65px;
+    
+}
+
+.custom-container .title {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    
+}
+.custom-container .title:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #fff;
+    margin: 22px auto 26px;
+
+}
+.custom-container .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    opacity: 0.8;
+}
+.custom-container .download {
+    margin: auto;
+    border: 2px solid #fff;
+    height: 38px;
+    width: 131px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 33px;
+    transition: all .4s;
+}
+
+.custom-container .download a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    
+}
+
+.download:hover {
+    
+    background: rgb(255, 255, 255);
+  
+    
+}
+.download:hover a {
+    
+   color: rgb(150, 150, 150);
+    
+}
+/* contact us */
+
+   
+     
+
+
+.contact-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 63px 0 65px;
+    
+}
+
+.contact-container .title {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    
+}
+.contact-container .title:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 22px auto 26px;
+
+}
+.contact-container .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #86878b;
+    
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contact .input {
+    width: calc(50% - 25px);
+    margin-top: 30px;
+}
+.contact input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    margin-bottom: 20px ;
+    
+    border-bottom: 1px solid #d6d6d6;
+ 
+    padding: 15px;
+    
+    
+}
+
+.contact input:focus {
+    border: 0px;
+    outline: none   ;
+    border-bottom: 1px solid #ff8b38;
+}
+
+.contact textarea {
+    display: block;
+    width: 90%;
+    min-width: 10%;
+    height: 180px;
+    border: 0;
+    margin-bottom: 20px ;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d6d6d6;
+ 
+    padding: 15px;
+}
+
+.contact textarea:focus {
+    outline: none   ;
+    border-bottom: 1px solid #ff8b38;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+   min-height: 100px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+footer .icons i{
+    font-size: 24px;
+    color: #ccc;
+    padding: 0 12px 0;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+footer .icons i:hover{
+    color: #ff8b38;
+    
+}
+
+
